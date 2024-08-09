@@ -626,6 +626,69 @@ h3.my-profession {
     display: block;
 }
 
+.portfolio .portfolio-item-inner .portfolio-item-heading {
+    color: var(--text-black-900);
+    padding: 5px;
+    text-align: center;
+    text-decoration:underline;
+}
+
+.portfolio .portfolio-item-inner .portfolio-item-overview {
+    color: var(--text-black-900);
+    padding: 5px;
+    text-align: center;
+}
+
+.portfolio .portfolio-item-inner p {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+
+.portfolio .portfolio-item-inner .buttons {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.portfolio-item {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item-inner {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.portfolio-item-heading, .portfolio-item-overview, .portfolio-image p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* Hover effect */
+.portfolio-item:hover .portfolio-item-inner {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-item:hover .portfolio-item-heading,
+.portfolio-item:hover .portfolio-item-overview,
+.portfolio-item:hover .portfolio-image p {
+    color: var(--text-black-900);
+}
+
 /* contact */
 .contact-title {
     color: var(--skin-color);
